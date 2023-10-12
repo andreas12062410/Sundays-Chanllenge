@@ -1,0 +1,13 @@
+.page-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+
+    .title {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 20px 0px;
+    }
+}

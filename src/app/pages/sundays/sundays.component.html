@@ -1,0 +1,20 @@
+<h2>
+  This is sundays project
+  <h2 [formGroup]="dateRange">
+    <mat-form-field>
+      <mat-label>Choose Date Range</mat-label>
+      <mat-date-range-input [rangePicker]="picker" [formGroup]="dateRange">
+        <input matStartDate formControlName="start" placeholder="Start Date" />
+        <input matEndDate formControlName="end" placeholder="End Date" />
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+  </h2>
+  <mat-error *ngIf="errorMessage !== null" class="error-message">
+    {{ errorMessage }}
+  </mat-error>
+  <div *ngIf="result !== null" class="result">
+    Number of Sundays: {{ result }}
+  </div>
+</h2>
