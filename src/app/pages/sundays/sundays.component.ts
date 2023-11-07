@@ -58,7 +58,7 @@ export class SundaysComponent implements OnInit {
       endDate < startDate ||
       endDate.getFullYear() - startDate.getFullYear() < 2
     ) {
-      this.errorMessage = 'Dates must be at least two years apart ';
+      this.errorMessage = 'Dates must be at least two years apart';
       return false;
     }
 
