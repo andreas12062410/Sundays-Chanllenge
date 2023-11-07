@@ -79,7 +79,9 @@ export class SundaysComponent implements OnInit {
       if (currentDate.getDay() === 0 && currentDate.getDate() < 28) {
         count++;
       }
+      //this is Sunday calculation
       currentDate.setDate(currentDate.getDate() + 1);
+
     }
 
     return count;
