@@ -1,6 +1,4 @@
 # Angular Code Challengs - Sundays
-
-This code challenge requires you to complete the following
 1. Add a new route for /pages/sundays and ensure that all pages redirect to that page by default
 2. Create a new component under the "sundays" directory that does the following
     1. Displays a material date range picker and apply the following validaation rules
